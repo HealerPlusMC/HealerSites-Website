@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.5">
+    <title>HealerSites - مصمم مواقع محترف</title>
+    <meta name="description" content="مصمم مواقع محترف، أقدم حلول تصميم وتطوير مواقع متكاملة">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Three.js for WebGL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    
+    <!-- Vanilla Tilt for 3D tilt effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="light-theme">
+    <!-- WebGL Background Canvas -->
+    <canvas id="webgl-bg"></canvas>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span>HealerSites</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">الرئيسية</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#portfolio">أعمالي</a></li>
+                    <li><a href="#about">عنّي</a></li>
+                    <li><a href="#contact">اتصل بي</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon light-icon"></i>
+                        <i class="fas fa-sun dark-icon"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>مرحباً، أنا <span>Healer</span></h1>
+                <h2>مصمم مواقع محترف</h2>
+                <p>أقدم حلول تصميم وتطوير مواقع ويب مبتكرة وجذابة تلبي احتياجات عملك</p>
+                <a href="#contact" class="btn">تواصل معي</a>
+            </div>
+            
+            <div class="hero-image">
+                <div class="placeholder-image"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">ما أقدمه من خدمات</h2>
+            <p class="section-subtitle">حلول ويب متكاملة تناسب احتياجاتك</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>تصميم مواقع</h3>
+                    <p>تصميم مواقع جذابة وسهلة الاستخدام مع الحفاظ على الهوية البصرية لعلامتك التجارية</p>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تصميم متجاوب</h3>
+                    <p>ضمان ظهور موقعك بشكل مثالي على جميع الأجهزة والشاشات بمختلف أحجامها</p>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>تحسين محركات البحث</h3>
+                    <p>تحسين موقعك لمحركات البحث لزيادة الزيارات وتحسين الترتيب</p>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>متاجر إلكترونية</h3>
+                    <p>تصميم وتطوير متاجر إلكترونية متكاملة مع أنظمة الدفع والشحن</p>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>النشر والإستضافة</h3>
+                    <p>مساعدتك في نشر موقعك على استضافة آمنة وسريعة مع دعم فني</p>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>تصميم جرافيك</h3>
+                    <p>تصميم شعارات وهوية بصرية متكاملة لتعزيز حضورك الرقمي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">أعمالي السابقة</h2>
+            <p class="section-subtitle">بعض المشاريع التي قمت بتنفيذها</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-tilt>
+                    <div class="placeholder-image"></div>
+                    <div class="portfolio-overlay">
+                        <h3>موقع شركة</h3>
+                        <p>تصميم موقع لشركة تقنية</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-tilt>
+                    <div class="placeholder-image"></div>
+                    <div class="portfolio-overlay">
+                        <h3>متجر إلكتروني</h3>
+                        <p>متجر لبيع المنتجات الإلكترونية</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-tilt>
+                    <div class="placeholder-image"></div>
+                    <div class="portfolio-overlay">
+                        <h3>موقع شخصي</h3>
+                        <p>موقع شخصي لطبيب أسنان</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-tilt>
+                    <div class="placeholder-image"></div>
+                    <div class="portfolio-overlay">
+                        <h3>موقع تعليمي</h3>
+                        <p>منصة للتعليم عن بعد</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-image">
+                <div class="placeholder-image"></div>
+            </div>
+            
+            <div class="about-content">
+                <h2 class="section-title">من أنا؟</h2>
+                <p>أنا Healer، مصمم ومطور مواقع ويب محترف مع خبرة في إنشاء مواقع إلكترونية احترافية وعالية الجودة.</p>
+                
+                <div class="skills">
+                    <h3>مهاراتي</h3>
+                    <div class="skill-item">
+                        <span>HTML & CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <span>UI/UX Design</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <span>PHP & MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معي</h2>
+            <p class="section-subtitle">أنا هنا لمساعدتك في أي استفسار أو مشروع</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>contact@healersites.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>الهاتف</h3>
+                            <p>+1234567890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
+                    <input type="hidden" name="access_key" value="22de0102-12c5-49bb-86b2-07aabce4347a">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <input type="hidden" name="subject" value="New Submission from HealerSites">
+                    <input type="hidden" name="from_name" value="HealerSites">
+                    <input type="checkbox" name="botcheck" style="display: none;">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="الاسم" required 
+                            minlength="3" maxlength="50" 
+                            pattern="[\u0600-\u06FFa-zA-Z\s]+" 
+                            title="الرجاء إدخال اسم صحيح باللغة العربية أو الإنجليزية فقط">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="البريد الإلكتروني" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="الموضوع">
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="الرسالة" required minlength="10" maxlength="1000"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">إرسال الرسالة</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>HealerSites</h3>
+                    <p>مصمم ومطور مواقع ويب محترف، أقدم حلول تصميم وتطوير متكاملة لتنمية أعمالك.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#portfolio">أعمالي</a></li>
+                        <li><a href="#about">عنّي</a></li>
+                        <li><a href="#contact">اتصل بي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>الخدمات</h3>
+                    <ul>
+                        <li><a href="#">تصميم مواقع</a></li>
+                        <li><a href="#">تصميم متجاوب</a></li>
+                        <li><a href="#">تحسين محركات البحث</a></li>
+                        <li><a href="#">متاجر إلكترونية</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> HealerSites. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- JavaScript Files -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "healersites---website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HealerPlusMC/HealerSites-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HealerPlusMC/HealerSites-Website/issues"
+  },
+  "homepage": "https://github.com/HealerPlusMC/HealerSites-Website#readme",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^2.9.9"
+  }
+}
